@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import ToDoContainer from './components/ToDoContainer'
 
 function App() {
   return (
-    <div>
-     <div className="text-5xl bg-gray-900 text-yellow-200">hhshsd</div>
+    <div className="min-h-screen w-full bg-gray-300">
+      <Navbar />
+      <main className="flex flex-col items-center justify-center w-full overflow-hidden">
+        <ToDoContainer />
+      </main>
     </div>
   )
 }
